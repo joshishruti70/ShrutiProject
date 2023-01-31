@@ -1,0 +1,45 @@
+<body>
+    <h4 align="center">Search Employee Information</h4><br>
+<table align="center" class="t">
+<tr class="row">
+<td>
+    <form #search="ngForm" (ngSubmit)="searchData(search)">
+    <label><h5><b>Enter Id here</b></h5></label>
+    <input type="text"  id="id" name="id" ngModel="id">   
+    <button type="submit">Search</button><br><br><br>
+    
+</form>
+</td>
+</tr>
+</table><hr>
+<table align="center" class="t">
+<tbody>
+    <tr>
+        <td><b>ID</b></td>
+        <td><b>Name</b></td>
+        <td><b>Surname</b></td>
+        <td><b>DOB</b></td>
+        <td><b>Gender</b></td>
+        <td><b>Marrietal Status</b></td>
+        <td><b>DOJ</b></td>
+        <td><b>Designation</b></td> 
+    </tr>
+    </tbody>
+    
+    <tbody>
+        <tr>
+            <td>{{searchEmp1.id}}</td>
+            <td>{{searchEmp1.name}}</td>
+            <td>{{searchEmp1.surname}}</td>
+            <td>{{searchEmp1.dob}}</td>
+            <td>{{searchEmp1.gender}}</td>
+            <td>{{searchEmp1.mstatus}}</td>
+            <td>{{searchEmp1.doj}}</td>
+            <td>{{searchEmp1.designation}}</td>
+        </tr>
+        
+    </tbody>
+    
+    </table>
+    </body>     
+    

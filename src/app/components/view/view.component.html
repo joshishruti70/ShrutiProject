@@ -1,0 +1,73 @@
+<!-- <meta http-equiv="refresh" content="120">  -->
+<body class="b">
+    <div>
+        <!-- <meta http-equiv="refresh" content="10"> -->
+        <h3 align="center" color="blue">Employees' Record</h3><br>
+        <table align="center" class="t">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>DOB</th>
+        <th>Gender</th>
+        <th>Marrietal Status</th>
+        <th>DOJ</th>
+        <th>Designation</th> 
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of viewEmp">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.surname}}</td>
+            <td>{{employee.dob}}</td>
+            <td>{{employee.gender}}</td>
+            <td>{{employee.mstatus}}</td>
+            <td>{{employee.doj}}</td>
+            <td>{{employee.designation}}</td>
+        </tr>
+    </tbody>
+
+    </table>
+    </div>
+    <br>
+    <table align="center">
+        <tr>
+            <td>
+    <div align="center">
+        <h4>Update Record</h4>
+        
+        <form #update="ngForm" (ngSubmit)="updateData(update)">
+            <input type="text" placeholder="id"  name="id" id="id" ngModel="id">
+            <input type="text" placeholder="name" name="name" id="name" ngModel="name"><br>
+             <input type="text" placeholder="surname" name="surname" id="surname" ngModel="surname">
+            <input type="text" placeholder="DOB" name="dob" id="dob" ngModel="dob"><br>
+            <input type="text" placeholder="Gender" name="gender" id="gender" ngModel="gender">
+            <input type="text" placeholder="Mstatus" name="mstatus" id="mstatus" ngModel="mstatus"><br>
+            <input type="text" placeholder="DOJ" name="doj" id="doj" ngModel="doj">
+            <input type="text" placeholder="Designation" name="designation" id="designation" ngModel="designation"><br>
+            <input type="reset" value="Reset">
+            <input type="submit" onclick="autoRefresh()" value="update">
+        </form>
+    </div>
+    </td>
+    </tr>
+    </table>
+    <br>
+    
+
+
+    <div align="center">
+        <h4>Delete Record</h4>
+        
+        <form #delete="ngForm" (ngSubmit)="deleteData(delete)"> 
+            <input type="text" name="id" id="id" ngModel="id">
+            
+            <input type="submit" value="Delete">
+    
+        </form>
+    </div>
+</body>
+
+    

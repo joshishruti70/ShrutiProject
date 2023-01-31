@@ -1,0 +1,46 @@
+<html>
+    <body class="A">
+        <h3 align="center">Add New Employee Information</h3>
+        <table align="center" class="ts">
+            
+            <tr class="row">
+                <td>
+        
+            <form #insert="ngForm" (ngSubmit)="insertData(insert)">
+            <b>ID  </b>  <input type="text" id="id" name="id" placeholder="Enter ID here" ngModel="id"><br>
+            <b>Name  </b>  <input type="text" id="name" name="name" placeholder="Enter Name here" ngModel="name"><br>
+            <b>Surname  </b>  <input type="text" id="surname" name="surname" placeholder="Enter Surname here" ngModel="surname"><br>
+            <b>DOB  </b>  <input type="text" id="dob" name="dob" placeholder="Enter Date Of Birth" ngModel="dob"><br>
+            
+            <b>Designation  </b>  <input type="text"id="designation" name="designation" placeholder="Enter Designation" ngModel="designation"><br>
+            <b>Date Of Joining  </b><input type="text" id="doj" name="doj" placeholder="Enter Date Of Joining" ngModel="doj"><br>
+            
+            <label><b>Email :</b></label>   
+            <input type="text" placeholder="Enter email" id="email" name="email" ngModel="email">  
+            <label><b>Password :</b></label>   
+            <input type="password" placeholder="Enter Password"id="password" name="password" ngModel="password">
+
+            
+            <b>Gender  </b><br>
+            <input type="radio" id="gender" name="gender" value="Male" ngModel="gender">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="gender" name="gender" value="Female" ngModel="gender">
+            <label for="Male">Female</label><br><br>
+            <b>Marrietal Status  </b><br>
+            <input type="radio" id="mstatus" name="mstatus" value="Married" ngModel="mstatus">
+            <label for="Married">Married</label><br>
+            <input type="radio" id="mstatus" name="mstatus" value="Unmarried" ngModel="mstatus">
+            <label for="Unmarried">Unmarried</label><br><br>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            
+        </form>
+         
+        
+        </td>
+        </tr>
+        </table>
+    </body>
+</html>
+

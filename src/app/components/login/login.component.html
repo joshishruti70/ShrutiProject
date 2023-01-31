@@ -1,0 +1,21 @@
+<body>    
+    <h1 align="center"> Login here  </h1><a align="right"  class="nav-link" routerLink="/ems" routerLinkActive="active" href="#!">Logout</a>
+    <form>  
+        <div class="container">   
+
+            <form #login="ngForm" (ngSubmit)="loginData()">
+
+            <label><b>Email :</b></label>   
+            <input type="text" placeholder="Enter email" id="email" name="email" [(ngModel)]="us.email">  
+            <label><b>Password :</b></label>   
+            <input type="password" placeholder="Enter Password"id="password" name="password" [(ngModel)]="us.password">  
+            <button type="submit">Login</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            <!-- <a href="#"> Forgot password? </a> -->
+            <a routerLink="/newEmp" routerLinkActive="active">Add New Employee here</a>   
+           
+        </form>
+    </div>  
+    </form>   
+</body>     

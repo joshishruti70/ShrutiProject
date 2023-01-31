@@ -1,0 +1,74 @@
+/* .img1{
+    background-image: url("/assets/ems.jpeg");
+    
+} */
+.ts{
+    box-shadow: 8px 8px 8px #363333; 
+    border-spacing: 5cm;
+    width: 1000px;
+    border-spacing: 100px;
+    align-items: center;
+    size: 500px;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 10px;
+     align-items: center;
+    background-color: skyblue;
+}
+
+.A{
+    width: auto;
+    height: auto;
+    /* background-color: #F3D8F0; */
+    background-color: #FCF787; 
+    overflow:auto;
+    }
+
+.row{
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.btn{
+    margin-right: 100px;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=reset]{
+    /* width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none; 
+    width: 100%;
+    color: white;
+    background: blue;
+    margin-left: 5px;*/
+    background-color: blue;   
+    width: 25%;  
+     color: white;   
+     padding: 15px;   
+     margin: 10px 0px;   
+     border: none;   
+     cursor: pointer;  
+  }
+
+  input[type=submit]{
+    background-color: blue;  
+    margin-left: 15px; 
+    width: 25%;  
+     color: white;   
+     padding: 15px;   
+     /* margin: 10px 0px;    */
+     border: none;   
+     cursor: pointer;
+
+  }
